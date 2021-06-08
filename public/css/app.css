@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -40,6 +44,7 @@
 .container-items .menu-nav {
   list-style-type: none;
   width: 80%;
+  text-align: center;
 }
 .container-items .menu-nav li {
   display: inline-block;
@@ -64,4 +69,35 @@
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+main {
+  position: relative;
+}
+main .current-series {
+  background-color: #0373fc;
+  width: 200px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  left: 200px;
+}
+main .comics-list {
+  background-color: #303233;
+}
+main .comics-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .comics-container .comic {
+  max-width: calc 16.6666666667%;
+  padding: 30px 20px;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
 }
